@@ -1,0 +1,171 @@
+<html>
+ <head>
+  <title>
+   Donor Profile
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .nav {
+            
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-section, .history-section {
+            margin-bottom: 20px;
+        }
+        .profile-section h2, .history-section h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .profile-details, .history-details {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile-details p, .history-details p {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .profile-details button, .history-details button {
+            background-color: #00bcd4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .profile-details button:hover, .history-details button:hover {
+            background-color: #0097a7;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+    <img alt="HelpBridge Logo" src="hs.jpg"/>
+    <h1>
+     HelpBridge
+    </h1>
+  </div>
+  <div class="nav">
+   <div>
+    <a href="">
+     My Donations
+    </a>
+    <a href="">
+     Donate Now
+    </a>
+    <a href="">
+     Donation History
+    </a>
+   </div>
+   <div>
+    <a href="#">
+     Welcome, Donor
+    </a>
+    <a href="#">
+     Logout
+    </a>
+   </div>
+  </div>
+  <div class="container">
+   <div class="profile-section">
+    <h2>
+     Donor Profile
+    </h2>
+    <div class="profile-details">
+     <p>
+      <strong>
+       Name:
+      </strong>
+      Jane Donor
+     </p>
+     <p>
+      <strong>
+       Email:
+      </strong>
+      jane.donor@example.com
+     </p>
+     <p>
+      <strong>
+       Role:
+      </strong>
+      Donor
+     </p>
+     <p>
+      <strong>
+       Total Donations:
+      </strong>
+      12
+     </p>
+     <button>
+      Update Profile
+     </button>
+    </div>
+   </div>
+   <div class="history-section">
+    <h2>
+     Donation History
+    </h2>
+    <div class="history-details">
+     <p>
+      <strong>
+       Recent Donation:
+      </strong>
+      5 Bags of Clothes - September 25, 2024
+     </p>
+     <p>
+      <strong>
+       Next Drive Participation:
+      </strong>
+      Food Donation - October 5, 2024
+     </p>
+     <button>
+      View All Donations
+     </button>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

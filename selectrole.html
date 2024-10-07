@@ -1,0 +1,99 @@
+<html>
+ <head>
+  <title>
+   Select Role
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .left-section {
+            flex: 1;
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            justify-content: center;
+            position: relative;
+            width: 50%; /* Set to 50% of the container */
+        }
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            width: 50%; /* Set to 50% of the container */
+        }
+        .right-section h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .right-section button {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #007bff;
+            border-radius: 20px;
+            background-color: white;
+            color: #007bff;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .right-section button:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .home-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 2em;
+            color: black;
+        }
+        .illustration {
+            width: 100%; /* Make the image cover the full width of the section */
+            height: 100%; /* Make the image cover the full height of the section */
+            object-fit: cover; /* Ensure the image covers the section properly */
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="left-section">
+    <a href="index.html">
+    <i class="fas fa-home home-icon"></i>
+    </a>
+    <img alt="Illustration of a person with a light bulb, laptop, pencil, and paper" class="illustration" src="https://storage.googleapis.com/a1aa/image/ha4eixHF9frA8EYSoEtQK1g2xF52QlH06kIwXijWZx5knyiTA.jpg"/>
+   </div>
+   <div class="right-section">
+    <h1>
+     Select Role
+    </h1>
+    <a href="DonorRegister.html">
+    <button >
+     Donor
+    </button >
+</a>
+<a href="recipientregister.html">
+    <button >
+     Recipient
+    </button >
+</a>
+<a href="LogisticsRegister.html">
+    <button >
+    Logistics
+    </button >
+</a>
+   </div>
+  </div>
+ </body>
+</html>

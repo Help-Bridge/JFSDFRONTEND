@@ -1,0 +1,211 @@
+<html>
+ <head>
+  <title>
+   HelpBridge
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #e0f7fa;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .nav {
+            background-color: #00bcd4;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .about {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .about p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .requests {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .requests h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .requests p {
+            font-size: 16px;
+            margin: 0 0 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .btn {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0097a7;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+    <img alt="HelpBridge Logo" src="hs.jpg"/>
+   <h1>
+    HelpBridge
+   </h1>
+  </div>
+  <div class="nav">
+   <div>
+    <a href="RecipientHome.html">
+        Dashboard
+       </a>
+    <a href="MyRequests.html">
+     My Requests
+    </a>
+    <a href="TrackDelivery.html">
+     Track Delivery
+    </a>
+    <a href="SubmitFeedback.html">
+     Submit Feedback
+    </a>
+   </div>
+   <div>
+    <a href="#">
+     Welcome, Recipient
+    </a>
+    <a href="index.html">
+     Logout
+    </a>
+   </div>
+  </div>
+  <div class="content">
+   <div class="about">
+    <h2>
+     About HelpBridge
+    </h2>
+    <p>
+     We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
+    </p>
+   </div>
+   <div class="requests">
+    <h2>
+     My Requests
+    </h2>
+    <p>
+     View the items you have requested for assistance.
+    </p>
+    <table>
+     <tr>
+      <th>
+       Request ID
+      </th>
+      <th>
+       Item Name
+      </th>
+      <th>
+       Quantity
+      </th>
+      <th>
+       Status
+      </th>
+      <th>
+       Actions
+      </th>
+     </tr>
+     <tr>
+      <td>
+       001
+      </td>
+      <td>
+       Blankets
+      </td>
+      <td>
+       5
+      </td>
+      <td>
+       Approved
+      </td>
+      <td>
+       <button class="btn">
+        Cancel Request
+       </button>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       002
+      </td>
+      <td>
+       Food Package
+      </td>
+      <td>
+       3
+      </td>
+      <td>
+       Pending
+      </td>
+      <td>
+       <button class="btn">
+        Cancel Request
+       </button>
+      </td>
+     </tr>
+    </table>
+   </div>
+  </div>
+ </body>
+</html>

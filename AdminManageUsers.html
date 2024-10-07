@@ -1,0 +1,265 @@
+
+<!-- saved from url=(0049)file:///C:/Users/kvish/Downloads/index%20(8).html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>
+   HelpBridge - Manage Users
+  </title>
+  <link href="./adminManage Users_files/all.min.css" rel="stylesheet">
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+   }
+   .title-container {
+      background-color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   .title-container .title {
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+   }
+   .title-container .title img {
+      margin-right: 10px;
+   }
+   .header {
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header .nav {
+   display: flex;
+   align-items: center;
+   margin-left: auto; /* Pushes the links to the right */
+}
+
+   .header .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+      font-size: 18px;
+   }
+   .header .nav a:hover {
+      text-decoration: underline;
+   }
+   .header .nav .welcome {
+      margin-left: 40px;
+      font-weight: bold;
+   }
+   .header .nav .logout {
+      margin-left: 10px;
+      color: #007bff;
+   }
+   .about {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+   }
+   .about h2 {
+      font-size: 24px;
+      font-weight: bold;
+   }
+   .about p {
+      font-size: 18px;
+      margin-top: 10px;
+   }
+   .content {
+      padding: 20px;
+   }
+   .content h3 {
+      font-size: 22px;
+      font-weight: bold;
+   }
+   .content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+   }
+   .table-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   table {
+      width: 100%;
+      border-collapse: collapse;
+   }
+   table th, table td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+   }
+   table th {
+      background-color: #f2f2f2;
+   }
+   .btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+   }
+   .btn:hover {
+      background-color: #0056b3;
+   }
+   .action-btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+   }
+   .action-btn:hover {
+      background-color: #0056b3;
+   }
+   .action-btn.delete {
+      background-color: #dc3545;
+   }
+   .action-btn.delete:hover {
+      background-color: #c82333;
+   }
+  </style>
+ </head>
+ <body>
+  <!-- Title Block -->
+  <div class="title-container">
+   <div class="title">
+    <img alt="HelpBridge Logo" src="logo.jpg" >
+    HelpBridge
+   </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="header">
+   <div class="nav">
+      
+         <a href="AdminDashboard.html">
+             Dashboard
+            </a>
+         <a href="AdminManageUsers.html">
+          Manage Users
+         </a>
+         <a href="AdminManageDonationDrives.html">
+          Donation Drives
+         </a>
+         <a href="adminReports.html">
+          Reports
+         </a>
+         <a href="AdminProfile.html">
+          Welcome, Admin
+         </a>
+         <a href="index.html">
+          Logout
+         </a>
+        
+   </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about">
+   <h2>
+    About HelpBridge
+   </h2>
+   <p>
+    We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
+   </p>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+   <h3>
+    Manage Users
+   </h3>
+   <p>
+    Here you can manage all users registered on the platform.
+   </p>
+   <div class="table-container">
+    <table>
+     <thead>
+      <tr>
+       <th>
+        User ID
+       </th>
+       <th>
+        Name
+       </th>
+       <th>
+        Email
+       </th>
+       <th>
+        Role
+       </th>
+       <th>
+        Actions
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        101
+       </td>
+       <td>
+        John Doe
+       </td>
+       <td>
+        john@example.com
+       </td>
+       <td>
+        Donor
+       </td>
+       <td>
+        <a class="action-btn" href="file:///C:/Users/kvish/Downloads/index%20(8).html#">
+         Edit
+        </a>
+        <a class="action-btn delete" href="file:///C:/Users/kvish/Downloads/index%20(8).html#">
+         Delete
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        102
+       </td>
+       <td>
+        Jane Smith
+       </td>
+       <td>
+        jane@example.com
+       </td>
+       <td>
+        Recipient
+       </td>
+       <td>
+        <a class="action-btn" href="file:///C:/Users/kvish/Downloads/index%20(8).html#">
+         Edit
+        </a>
+        <a class="action-btn delete" href="file:///C:/Users/kvish/Downloads/index%20(8).html#">
+         Delete
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <a class="btn" href="file:///C:/Users/kvish/Downloads/index%20(8).html#">
+     Add New User
+    </a>
+   </div>
+  </div>
+ 
+
+</body></html>
