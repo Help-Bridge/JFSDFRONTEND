@@ -1,0 +1,171 @@
+<html>
+ <head>
+  <title>
+   HelpBridge
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .header nav {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .about {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .about p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .profile, .history {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .profile h3, .history h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .profile p, .history p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .profile .update-btn, .history .view-btn {
+            background-color: #4a4a4a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .profile .update-btn:hover, .history .view-btn:hover {
+            background-color: #333;
+        }
+  </style>
+ </head>
+ <body>
+    <div>
+        <h1>
+         <img alt="HelpBridge Logo" src="logo.jpg">
+         HelpBridge
+        </h1>
+     </div>
+  <div class="header">
+   
+    <nav>
+        <a href="RecipientHome.html">Dashboard</a>
+        <a href="MyRequests.html">My Requests</a>
+        <a href="TrackDelivery.html">Track Delivery</a>
+        <a href="SubmitFeedback.html">Submit Feedback</a>
+        <a href="RecipientProfile.html">Welcome, Recipient</a>
+        <a href="index.html">Logout</a>
+    </nav>
+  </div>
+  <div class="content">
+   <div class="about">
+    <h2>
+     About HelpBridge
+    </h2>
+    <p>
+     We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
+    </p>
+   </div>
+   <div class="profile">
+    <h3>
+     Recipient Profile
+    </h3>
+    <p>
+     <strong>
+      Name:
+     </strong>
+     Mark Recipient
+    </p>
+    <p>
+     <strong>
+      Email:
+     </strong>
+     mark.recipient@example.com
+    </p>
+    <p>
+     <strong>
+      Role:
+     </strong>
+     Recipient
+    </p>
+    <p>
+     <strong>
+      Total Items Received:
+     </strong>
+     10
+    </p>
+    <button class="update-btn">
+     Update Profile
+    </button>
+   </div>
+   <div class="history">
+    <h3>
+     Request History
+    </h3>
+    <p>
+     <strong>
+      Recent Request:
+     </strong>
+     Winter Clothes - September 28, 2024
+    </p>
+    <p>
+     <strong>
+      Next Delivery:
+     </strong>
+     Expected October 3, 2024
+    </p>
+    <button class="view-btn">
+     View All Requests
+    </button>
+   </div>
+  </div>
+ </body>
+</html>

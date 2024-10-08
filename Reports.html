@@ -1,19 +1,17 @@
 <html>
- <head>
-  <title>
-   HelpBridge Reports
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
+<head>
+    <title>HelpBridge</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
         }
         .header {
-            background-color: #e0f7fa;
-            padding: 10px 20px;
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
             display: flex;
             align-items: center;
         }
@@ -25,20 +23,18 @@
             font-size: 24px;
             margin: 0;
         }
-        .nav {
-            background-color: #00bcd4;
-            padding: 10px 20px;
+        .header nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
         }
-        .nav a {
-            color: #000;
+        .header nav a {
+            margin: 0 15px;
             text-decoration: none;
-            margin: 0 10px;
+            color: black;
             font-size: 18px;
         }
-        .nav a:hover {
+        .header nav a:hover {
             text-decoration: underline;
         }
         .content {
@@ -90,7 +86,7 @@
             background-color: #f2f2f2;
         }
         .btn {
-            background-color: #00bcd4;
+            background-color: #2196f3; /* Changed button color to match theme */
             color: #fff;
             padding: 5px 10px;
             border: none;
@@ -98,96 +94,58 @@
             cursor: pointer;
         }
         .btn:hover {
-            background-color: #0097a7;
+            background-color: #0b7dda; /* Hover effect for buttons */
         }
-  </style>
- </head>
- <body>
-  <div class="header">
-   <img alt="HelpBridge Logo" src="hs.jpg"/>
-   <h1>
-    HelpBridge Reports
-   </h1>
-  </div>
-  <div class="nav">
-    <a href="LogisticsHome.html">
-        Dashboard
-       </a>
-    <a href="Manage Deliveries.html">
-     Manage Deliveries
-    </a>
-    <a href="Manage Inventory.html">
-     Manage Inventory
-    </a>
-    <a href="Reports.html">
-     reports
-    </a>
-   
-   
-    <a href="Logistics Coordinator Profile.html">
-     Welcome, Logistics Coordinator
-    </a>
-    <a href="index.html">
-     Logout
-    </a>
-   </div>
-  </div>
-  <div class="content">
-   <div class="about">
-    <h2>
-     About HelpBridge
-    </h2>
-    <p>
-     We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
-    </p>
-   </div>
-   <div class="reports">
-    <h2>
-     Reports
-    </h2>
-    <p>
-     Generate and view reports on inventory and deliveries.
-    </p>
-    <table>
-     <tr>
-      <th>
-       Report Type
-      </th>
-      <th>
-       Date Generated
-      </th>
-      <th>
-       Actions
-      </th>
-     </tr>
-     <tr>
-      <td>
-       Inventory Summary
-      </td>
-      <td>
-       2024-10-01
-      </td>
-      <td>
-       <button class="btn">
-        View Report
-       </button>
-      </td>
-     </tr>
-     <tr>
-      <td>
-       Delivery Status
-      </td>
-      <td>
-       2024-10-01
-      </td>
-      <td>
-       <button class="btn">
-        View Report
-       </button>
-      </td>
-     </tr>
-    </table>
-   </div>
-  </div>
- </body>
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+         <img alt="HelpBridge Logo" src="logo.jpg">
+         HelpBridge
+        </h1>
+     </div>
+    <div class="header">
+       
+        <nav>
+            <a href="LogisticsHome.html">Dashboard</a>
+            <a href="Manage Deliveries.html">Manage Deliveries</a>
+            <a href="Manage Inventory.html">Manage Inventory</a>
+            <a href="Reports.html">Reports</a>
+            <a href="Logistics Coordinator Profile.html">Welcome, Logistics Coordinator</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="about">
+            <h2>About HelpBridge</h2>
+            <p>We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!</p>
+        </div>
+        <div class="reports">
+            <h2>Reports</h2>
+            <p>Generate and view reports on inventory and deliveries.</p>
+            <table>
+                <tr>
+                    <th>Report Type</th>
+                    <th>Date Generated</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>Inventory Summary</td>
+                    <td>2024-10-01</td>
+                    <td>
+                        <button class="btn">View Report</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Delivery Status</td>
+                    <td>2024-10-01</td>
+                    <td>
+                        <button class="btn">View Report</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
 </html>

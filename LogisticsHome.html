@@ -1,8 +1,6 @@
 <html>
  <head>
-  <title>
-   HelpBridge
-  </title>
+  <title>HelpBridge</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
    body {
@@ -12,8 +10,8 @@
             padding: 0;
         }
         .header {
-            background-color: #e0f7fa;
-            padding: 10px 20px;
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
             display: flex;
             align-items: center;
         }
@@ -25,20 +23,18 @@
             font-size: 24px;
             margin: 0;
         }
-        .nav {
-            background-color: #00bcd4;
-            padding: 10px 20px;
+        .header nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
         }
-        .nav a {
-            color: #000;
+        .header nav a {
+            margin: 0 15px;
             text-decoration: none;
-            margin: 0 10px;
+            color: black;
             font-size: 18px;
         }
-        .nav a:hover {
+        .header nav a:hover {
             text-decoration: underline;
         }
         .about {
@@ -101,94 +97,51 @@
   </style>
  </head>
  <body>
+    <div>
+        <h1>
+         <img alt="HelpBridge Logo" src="logo.jpg">
+         HelpBridge
+        </h1>
+     </div>
   <div class="header">
-   <img alt="HelpBridge Logo" src="hs.jpg"/>
-   <h1>
-    HelpBridge
-   </h1>
-  </div>
-  <div class="nav">
-   <div>
-    <a href="LogisticsHome.html">
-        Dashboard
-       </a>
-    <a href="Manage Deliveries.html">
-     Manage Deliveries
-    </a>
-    <a href="Manage Inventory.html">
-     Manage Inventory
-    </a>
-    <a href="Reports.html">
-     reports
-    </a>
-   </div>
-   <div>
-    <a href="Logistics Coordinator Profile.html">
-     Welcome, Logistics Coordinator
-    </a>
-    <a href="index.html">
-     Logout
-    </a>
-   </div>
+   
+   <nav>
+     <a href="LogisticsHome.html">Dashboard</a>
+     <a href="Manage Deliveries.html">Manage Deliveries</a>
+     <a href="Manage Inventory.html">Manage Inventory</a>
+     <a href="Reports.html">Reports</a>
+     <a href="Logistics Coordinator Profile.html">Welcome, Logistics Coordinator</a>
+     <a href="index.html">Logout</a>
+   </nav>
   </div>
   <div class="about">
-   <h2>
-    About HelpBridge
-   </h2>
-   <p>
-    We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
-   </p>
+   <h2>About HelpBridge</h2>
+   <p>We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!</p>
   </div>
   <div class="content">
-   <h2>
-    Welcome, Logistics Coordinator
-   </h2>
-   <p>
-    Organize transportation, manage inventory, and ensure timely delivery of donations.
-   </p>
+   <h2>Welcome, Logistics Coordinator</h2>
+   <p>Organize transportation, manage inventory, and ensure timely delivery of donations.</p>
    <div class="section">
-    <h3>
-     Manage Deliveries
-    </h3>
-    <p>
-     Coordinate the transportation and delivery of donated items.
-    </p>
+    <h3>Manage Deliveries</h3>
+    <p>Coordinate the transportation and delivery of donated items.</p>
     <div class="buttons">
-     <a href="#">
-      View Pending Deliveries
-     </a>
-     <a href="#">
-      Schedule New Delivery
-     </a>
+     <a href="#">View Pending Deliveries</a>
+     <a href="#">Schedule New Delivery</a>
     </div>
    </div>
    <div class="section">
-    <h3>
-     Inventory Management
-    </h3>
-    <p>
-     Keep track of items in the inventory, ensuring accurate stock levels.
-    </p>
+    <h3>Inventory Management</h3>
+    <p>Keep track of items in the inventory, ensuring accurate stock levels.</p>
     <div class="buttons">
-     <a href="#">
-      View Inventory
-     </a>
-     <a href="#">
-      Update Inventory
-     </a>
+     <a href="#">View Inventory</a>
+     <a href="#">Update Inventory</a>
     </div>
    </div>
    <div class="section">
-    <h3>
-     Delivery Reports
-    </h3>
-    <p>
-     Review delivery performance and ensure timely delivery.
-    </p>
+    <h3>Delivery Reports</h3>
+    <p>Review delivery performance and ensure timely delivery.</p>
     <div class="buttons">
-     <a href="#">
-      View Delivery Reports
-     </a>
+     <a href="#">View Delivery Reports</a>
     </div>
    </div>
   </div>

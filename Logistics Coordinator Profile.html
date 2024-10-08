@@ -1,67 +1,61 @@
 <html>
- <head>
-  <title>
-   HelpBridge - Logistics Coordinator Profile
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
+<head>
+    <title>HelpBridge</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
         }
         .header {
-            background-color: #e0f7fa;
-            padding: 10px 20px;
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
             display: flex;
             align-items: center;
         }
         .header img {
             height: 50px;
-            margin-right: 10px; /* Adds space between logo and text */
+            margin-right: 10px;
         }
         .header h1 {
-            margin: 0;
             font-size: 24px;
+            margin: 0;
             color: #333;
-            display: inline-block; /* Ensures it stays next to the logo */
         }
-        .nav {
-            background-color: #00bcd4;
-            padding: 10px 20px;
+        .header nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
         }
-        .nav a {
-            margin: 0 10px;
+        .header nav a {
+            margin: 0 15px;
             text-decoration: none;
-            color: #000;
+            color: black;
             font-size: 18px;
         }
-        .nav a:hover {
+        .header nav a:hover {
             text-decoration: underline;
         }
-        .content {
-            padding: 20px;
-        }
         .about {
-            background-color: #fff;
+            background-color: white;
             padding: 20px;
+            margin: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-bottom: 20px;
         }
         .about h2 {
             margin: 0;
             font-size: 24px;
-            font-weight: bold;
         }
         .about p {
+            font-size: 18px;
             margin: 10px 0 0;
-            font-size: 16px;
+        }
+        .content {
+            margin: 20px;
         }
         .profile, .current-drive {
             background-color: #fff;
@@ -80,7 +74,7 @@
             font-size: 16px;
         }
         .profile .update-btn, .current-drive .view-btn {
-            background-color: #00bcd4;
+            background-color: #2196f3;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -89,57 +83,47 @@
             font-size: 16px;
         }
         .profile .update-btn:hover, .current-drive .view-btn:hover {
-            background-color: #0097a7;
+            background-color: #0b7dda;
         }
-  </style>
- </head>
- <body>
-  <div class="header">
-    <img alt="HelpBridge Logo" src="hs.jpg"/>
-    <h1>HelpBridge</h1>
-  </div>
-  <div class="nav">
-   <div>
-    <a href="D">
-     Deliveries
-    </a>
-    <a href="Manage Inventory.html">
-     Inventory
-    </a>
-    <a href="Reports.html">
-     Reports
-    </a>
-   </div>
-   <div>
-    <a href="Logistics Coordinator Profile.html">
-     Welcome, Logistics Coordinator
-    </a>
-    <a href="#">
-     Logout
-    </a>
-   </div>
-  </div>
-  <div class="content">
-   <div class="about">
-    <h2>About HelpBridge</h2>
-    <p>
-     We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
-    </p>
-   </div>
-   <div class="profile">
-    <h3>Logistics Coordinator Profile</h3>
-    <p><strong>Name:</strong> Sarah Coordinator</p>
-    <p><strong>Email:</strong> sarah.coordinator@example.com</p>
-    <p><strong>Role:</strong> Logistics Coordinator</p>
-    <p><strong>Total Drives Coordinated:</strong> 8</p>
-    <button class="update-btn">Update Profile</button>
-   </div>
-   <div class="current-drive">
-    <h3>Current Drive</h3>
-    <p><strong>Drive:</strong> Winter Clothes Distribution</p>
-    <p><strong>Next Pickup:</strong> October 4, 2024</p>
-    <button class="view-btn">View All Drives</button>
-   </div>
-  </div>
- </body>
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+         <img alt="HelpBridge Logo" src="logo.jpg">
+         HelpBridge
+        </h1>
+     </div>
+    <div class="header">
+        
+        <nav>
+            <a href="LogisticsHome.html">Dashboard</a>
+            <a href="Manage Deliveries.html">Manage Deliveries</a>
+            <a href="Manage Inventory.html">Manage Inventory</a>
+            <a href="Reports.html">Reports</a>
+            <a href="Logistics Coordinator Profile.html">Welcome, Logistics Coordinator</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </div>
+    <div class="about">
+        <h2>About HelpBridge</h2>
+        <p>We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!</p>
+    </div>
+    <div class="content">
+        <div class="profile">
+            <h3>Logistics Coordinator Profile</h3>
+            <p><strong>Name:</strong> Sarah Coordinator</p>
+            <p><strong>Email:</strong> sarah.coordinator@example.com</p>
+            <p><strong>Role:</strong> Logistics Coordinator</p>
+            <p><strong>Total Drives Coordinated:</strong> 8</p>
+            <button class="update-btn">Update Profile</button>
+        </div>
+        <div class="current-drive">
+            <h3>Current Drive</h3>
+            <p><strong>Drive:</strong> Winter Clothes Distribution</p>
+            <p><strong>Next Pickup:</strong> October 4, 2024</p>
+            <button class="view-btn">View All Drives</button>
+        </div>
+    </div>
+</body>
 </html>

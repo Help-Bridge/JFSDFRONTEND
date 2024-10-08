@@ -1,8 +1,6 @@
 <html>
  <head>
-  <title>
-   HelpBridge - Track Delivery
-  </title>
+  <title>HelpBridge - Track Delivery</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
    body {
@@ -12,11 +10,10 @@
             background-color: #f5f5f5;
         }
         .header {
-            background-color: #ffffff;
-            padding: 10px 20px;
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
             display: flex;
             align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .header img {
             height: 40px;
@@ -26,50 +23,41 @@
             font-size: 24px;
             margin: 0;
         }
-        .nav {
-            background-color: #00c0ff;
-            padding: 10px 20px;
+        .header nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
         }
-        .nav a {
-            color: #000000;
+        .header nav a {
+            margin: 0 15px;
             text-decoration: none;
-            margin: 0 10px;
+            color: black;
             font-size: 18px;
         }
-        .nav a:hover {
+        .header nav a:hover {
             text-decoration: underline;
-        }
-        .nav .right {
-            display: flex;
-            align-items: center;
-        }
-        .nav .right a {
-            margin-left: 20px;
         }
         .content {
             padding: 20px;
         }
         .about {
-            background-color: #ffffff;
+            background-color: white;
             padding: 20px;
+            margin: 20px 0;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-bottom: 20px;
         }
         .about h2 {
             font-size: 24px;
-            margin: 0 0 10px;
+            margin-bottom: 10px;
         }
         .about p {
             font-size: 18px;
             margin: 0;
         }
         .track-delivery {
-            background-color: #ffffff;
+            background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -99,94 +87,49 @@
   </style>
  </head>
  <body>
+    <div>
+        <h1>
+         <img alt="HelpBridge Logo" src="logo.jpg">
+         HelpBridge
+        </h1>
+     </div>
   <div class="header">
-   <img alt="HelpBridge Logo" src="hs.jpg"/>
-   <h1>
-    HelpBridge
-   </h1>
-  </div>
-  <div class="nav">
-   <div>
-    <a href="RecipientHome.html">
-        Dashboard
-       </a>
-    <a href="MyRequests.html">
-     My Requests
-    </a>
-    <a href="TrackDelivery.html">
-     Track Delivery
-    </a>
-    <a href="SubmitFeedback.html">
-     Submit Feedback
-    </a>
-   </div>
-   <div>
-    <a href="#">
-     Welcome, Recipient
-    </a>
-    <a href="index.html">
-     Logout
-    </a>
-   </div>
+   
+    <nav>
+        <a href="RecipientHome.html">Dashboard</a>
+        <a href="MyRequests.html">My Requests</a>
+        <a href="TrackDelivery.html">Track Delivery</a>
+        <a href="SubmitFeedback.html">Submit Feedback</a>
+        <a href="RecipientProfile.html">Welcome, Recipient</a>
+        <a href="index.html">Logout</a>
+       </nav>
   </div>
   <div class="content">
    <div class="about">
-    <h2>
-     About HelpBridge
-    </h2>
-    <p>
-     We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
-    </p>
+    <h2>About HelpBridge</h2>
+    <p>We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!</p>
    </div>
    <div class="track-delivery">
-    <h2>
-     Track Delivery
-    </h2>
-    <p>
-     Track the delivery status of your requested items.
-    </p>
+    <h2>Track Delivery</h2>
+    <p>Track the delivery status of your requested items.</p>
     <table>
      <tr>
-      <th>
-       Request ID
-      </th>
-      <th>
-       Item Name
-      </th>
-      <th>
-       Status
-      </th>
-      <th>
-       Estimated Delivery Date
-      </th>
+      <th>Request ID</th>
+      <th>Item Name</th>
+      <th>Status</th>
+      <th>Estimated Delivery Date</th>
      </tr>
      <tr>
-      <td>
-       001
-      </td>
-      <td>
-       Blankets
-      </td>
-      <td>
-       In Transit
-      </td>
-      <td>
-       2024-10-05
-      </td>
+      <td>001</td>
+      <td>Blankets</td>
+      <td>In Transit</td>
+      <td>2024-10-05</td>
      </tr>
      <tr>
-      <td>
-       002
-      </td>
-      <td>
-       Food Package
-      </td>
-      <td>
-       Pending Dispatch
-      </td>
-      <td>
-       2024-10-10
-      </td>
+      <td>002</td>
+      <td>Food Package</td>
+      <td>Pending Dispatch</td>
+      <td>2024-10-10</td>
      </tr>
     </table>
    </div>

@@ -1,19 +1,17 @@
 <html>
- <head>
-  <title>
-   HelpBridge Inventory Management
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
+<head>
+    <title>HelpBridge</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
         }
         .header {
-            background-color: #e0f7fa;
-            padding: 10px 20px;
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
             display: flex;
             align-items: center;
         }
@@ -25,21 +23,18 @@
             font-size: 24px;
             margin: 0;
         }
-        .nav {
-            background-color: #00bcd4;
-            padding: 10px 20px;
+        .header nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-left: auto;
+            justify-content: flex-end;
+            flex-grow: 1;
         }
-        .nav a {
-            color: #000;
+        .header nav a {
+            margin: 0 15px;
             text-decoration: none;
-            margin: 0 10px;
+            color: black;
             font-size: 18px;
         }
-        .nav a:hover {
+        .header nav a:hover {
             text-decoration: underline;
         }
         .about {
@@ -99,108 +94,59 @@
         .btn:hover {
             background-color: #0b7dda;
         }
-  </style>
- </head>
- <body>
-  <div class="header">
-   <img alt="HelpBridge Logo" src="hs.jpg"/>
-   <h1>
-    HelpBridge
-   </h1>
-  </div>
-  <div class="nav">
-   <div>
-    <a href="LogisticsHome.html">
-        Dashboard
-       </a>
-    <a href="Manage Deliveries.html">
-     Manage Deliveries
-    </a>
-    <a href="Manage Inventory.html">
-     Manage Inventory
-    </a>
-    <a href="Reports.html">
-     reports
-    </a>
-   </div>
-   <div>
-    <a href="Logistics Coordinator Profile.html">
-     Welcome, Logistics Coordinator
-    </a>
-    <a href="index.html">
-     Logout
-    </a>
-   </div>
-  </div>
-  <div class="about">
-   <h2>
-    About HelpBridge
-   </h2>
-   <p>
-    We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
-   </p>
-  </div>
-  <div class="inventory">
-   <h2>
-    Manage Inventory
-   </h2>
-   <p>
-    View and manage the available inventory for donations.
-   </p>
-   <table>
-    <tr>
-     <th>
-      Item Name
-     </th>
-     <th>
-      Category
-     </th>
-     <th>
-      Quantity Available
-     </th>
-     <th>
-      Actions
-     </th>
-    </tr>
-    <tr>
-     <td>
-      Blankets
-     </td>
-     <td>
-      Clothing
-     </td>
-     <td>
-      50
-     </td>
-     <td>
-      <button class="btn">
-       Restock
-      </button>
-      <button class="btn">
-       Remove
-      </button>
-     </td>
-    </tr>
-    <tr>
-     <td>
-      Food Package
-     </td>
-     <td>
-      Food
-     </td>
-     <td>
-      100
-     </td>
-     <td>
-      <button class="btn">
-       Restock
-      </button>
-      <button class="btn">
-       Remove
-      </button>
-     </td>
-    </tr>
-   </table>
-  </div>
- </body>
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+         <img alt="HelpBridge Logo" src="logo.jpg">
+         HelpBridge
+        </h1>
+     </div>
+    <div class="header">
+        
+        <nav>
+            <a href="LogisticsHome.html">Dashboard</a>
+            <a href="Manage Deliveries.html">Manage Deliveries</a>
+            <a href="Manage Inventory.html">Manage Inventory</a>
+            <a href="Reports.html">Reports</a>
+            <a href="Logistics Coordinator Profile.html">Welcome, Logistics Coordinator</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </div>
+    <div class="about">
+        <h2>About HelpBridge</h2>
+        <p>We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!</p>
+    </div>
+    <div class="inventory">
+        <h2>Manage Inventory</h2>
+        <p>View and manage the available inventory for donations.</p>
+        <table>
+            <tr>
+                <th>Item Name</th>
+                <th>Category</th>
+                <th>Quantity Available</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Blankets</td>
+                <td>Clothing</td>
+                <td>50</td>
+                <td>
+                    <button class="btn">Restock</button>
+                    <button class="btn">Remove</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Food Package</td>
+                <td>Food</td>
+                <td>100</td>
+                <td>
+                    <button class="btn">Restock</button>
+                    <button class="btn">Remove</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
 </html>

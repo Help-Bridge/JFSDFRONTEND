@@ -1,114 +1,108 @@
 <html>
  <head>
   <title>
-   HelpBridge - Recipient Sign Up
+   HelpBridge
   </title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
-   body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            background-image: url('register.png'); /* Update this with your image name and path */
-            /* This will make the image cover the entire background */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-        }
-        .header {
-            background-color: #d3d3d3;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-        }
-        .header img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        .header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 100px);
-        }
-        .form-container {
-            background-color: #d3d3d3;
-            padding: 20px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        .form-container h2 {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .form-container hr {
-            border: 0;
-            border-top: 1px solid #000;
-            margin: 10px 0;
-        }
-        .form-container label {
-            display: block;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        .form-container input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .form-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #000;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .form-container button:hover {
-            background-color: #333;
-        }
-        .image-container {
-            margin-left: 50px;
-        }
-        .image-container img {
-            width: 200px;
-            height: auto;
-        }
-        .footer {
-            background-color: #d3d3d3;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .footer .left, .footer .right {
-            display: flex;
-            align-items: center;
-        }
-        .footer .left img {
-            height: 20px;
-            margin-right: 5px;
-        }
-        .footer .right a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #000;
-            font-size: 14px;
-        }
-  </style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        background-image: url('register.png'); /* Update this with your image name and path */
+        /* This will make the image cover the entire background */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+    }
+    .header {
+        background-color: rgba(211, 211, 211, 0.9); /* Slight transparency */
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .header img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    .header h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 100px);
+    }
+    .form-container {
+        background-color: rgba(211, 211, 211, 0.9); /* Slight transparency for form */
+        padding: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        border-radius: 4px; /* Add some rounded corners */
+    }
+    .form-container h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .form-container hr {
+        border: 0;
+        border-top: 1px solid #000;
+        margin: 10px 0;
+    }
+    .form-container label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .form-container input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .form-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .form-container button:hover {
+        background-color: #333;
+    }
+    .footer {
+        background-color: rgba(211, 211, 211, 0.9); /* Slight transparency */
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .left, .footer .right {
+        display: flex;
+        align-items: center;
+    }
+    .footer .left img {
+        height: 20px;
+        margin-right: 5px;
+    }
+    .footer .right a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+    }
+</style>
  </head>
  <body>
   <div class="header">

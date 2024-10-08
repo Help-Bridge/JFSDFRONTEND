@@ -1,46 +1,41 @@
 <html>
- <head>
-  <title>
-   HelpBridge - Manage Deliveries
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
+<head>
+    <title>HelpBridge</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
         }
         .header {
-            background-color: #ffffff;
-            border-bottom: 1px solid #ccc;
-            padding: 10px 20px;
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
             display: flex;
             align-items: center;
         }
         .header img {
-            height: 40px;
+            height: 50px; /* Updated height as per the default styles */
             margin-right: 10px;
         }
         .header h1 {
             font-size: 24px;
             margin: 0;
+            color: #333;
         }
-        .nav {
-            background-color: #00c6ff;
-            background-image: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
-            padding: 10px 20px;
+        .header nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
         }
-        .nav a {
-            color: #000000;
+        .header nav a {
+            margin: 0 15px;
             text-decoration: none;
+            color: black;
             font-size: 18px;
-            margin: 0 10px;
         }
-        .nav a:hover {
+        .header nav a:hover {
             text-decoration: underline;
         }
         .content {
@@ -101,110 +96,59 @@
         .btn:hover {
             background-color: #0056b3;
         }
-  </style>
- </head>
- <body>
-  <div class="header">
-    <img alt="HelpBridge Logo" src="hs.jpg"/>
-   <h1>
-    HelpBridge
-   </h1>
-  </div>
-  <div class="nav">
-   <div>
-    <a href="LogisticsHome.html">
-        Dashboard
-       </a>
-    <a href="Manage Deliveries.html">
-     Manage Deliveries
-    </a>
-    <a href="Manage Inventory.html">
-     Manage Inventory
-    </a>
-    <a href="Reports.html">
-     reports
-    </a>
-   </div>
-   <div>
-    <a href="Logistics Coordinator Profile.html">
-     Welcome, Logistics Coordinator
-    </a>
-    <a href="index.html">
-     Logout
-    </a>
-   </div>
-  </div>
-  <div class="content">
-   <div class="about">
-    <h2>
-     About HelpBridge
-    </h2>
-    <p>
-     We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
-    </p>
-   </div>
-   <div class="manage-deliveries">
-    <h2>
-     Manage Deliveries
-    </h2>
-    <p>
-     Manage ongoing deliveries and ensure timely distribution of donations.
-    </p>
-    <table>
-     <thead>
-      <tr>
-       <th>
-        Delivery ID
-       </th>
-       <th>
-        Recipient Name
-       </th>
-       <th>
-        Item
-       </th>
-       <th>
-        Quantity
-       </th>
-       <th>
-        Status
-       </th>
-       <th>
-        Estimated Delivery Date
-       </th>
-       <th>
-        Actions
-       </th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>
-        DL001
-       </td>
-       <td>
-        John Doe
-       </td>
-       <td>
-        Food Package
-       </td>
-       <td>
-        5
-       </td>
-       <td>
-        In Transit
-       </td>
-       <td>
-        2024-10-05
-       </td>
-       <td>
-        <button class="btn">
-         Mark Delivered
-        </button>
-       </td>
-      </tr>
-     </tbody>
-    </table>
-   </div>
-  </div>
- </body>
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+         <img alt="HelpBridge Logo" src="logo.jpg">
+         HelpBridge
+        </h1>
+     </div>
+    <div class="header">
+        
+        <nav>
+            <a href="LogisticsHome.html">Dashboard</a>
+            <a href="Manage Deliveries.html">Manage Deliveries</a>
+            <a href="Manage Inventory.html">Manage Inventory</a>
+            <a href="Reports.html">Reports</a>
+            <a href="Logistics Coordinator Profile.html">Welcome, Logistics Coordinator</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="about">
+            <h2>About HelpBridge</h2>
+            <p>We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!</p>
+        </div>
+        <div class="manage-deliveries">
+            <h2>Manage Deliveries</h2>
+            <p>Manage ongoing deliveries and ensure timely distribution of donations.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Delivery ID</th>
+                        <th>Recipient Name</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                        <th>Estimated Delivery Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DL001</td>
+                        <td>John Doe</td>
+                        <td>Food Package</td>
+                        <td>5</td>
+                        <td>In Transit</td>
+                        <td>2024-10-05</td>
+                        <td><button class="btn">Mark Delivered</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
 </html>

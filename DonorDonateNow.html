@@ -1,9 +1,7 @@
-
-<!-- saved from url=(0050)file:///C:/Users/kvish/Downloads/index%20(14).html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <title>
-   HelpBridge - Donate Now
-  </title>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>HelpBridge</title>
   <link href="./donorDonate Now_files/all.min.css" rel="stylesheet">
   <style>
    body {
@@ -14,18 +12,17 @@
         }
         .header {
             background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
-            padding: 10px 20px;
+            padding: 20px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
         }
         .header img {
             height: 50px;
         }
         .header nav {
-            margin-left: auto; /* Push the nav links to the right */
             display: flex;
-            gap: 15px;
+            justify-content: flex-end;
+            flex-grow: 1;
         }
         .header nav a {
             color: black;
@@ -87,74 +84,45 @@
             background-color: #0056b3;
         }
   </style>
- </head>
- <body>
-    <div class="logo">
-        <img alt="HelpBridge Logo" src="logo.jpg">
-        <span style="font-size: 24px; font-weight: bold;">
+</head>
+<body>
+    <div>
+        <h1>
+         <img alt="HelpBridge Logo" src="logo.jpg">
          HelpBridge
-        </span>
+        </h1>
+     </div>
+    <div class="header">
+        
+        <nav>
+            <a href="Donorhome.html">Dashboard</a>
+            <a href="DonorMyDonations.html">My Donations</a>
+            <a href="DonorDonateNow.html">Donate Now</a>
+            <a href="DonorDonationHistory.html">Donation History</a>
+            <a href="DonorProfile.html">Welcome, Donor</a>
+            <a href="index.html">Logout</a>
+        </nav>
     </div>
-  <div class="header">
-   
-    <nav>
-        <a href="Donorhome.html">
-            Dashboard
-           </a>
-        <a href="DonorMyDonations.html">
-         My Donations
-        </a>
-        <a href="DonorDonateNow.html">
-         Donate Now
-        </a>
-        <a href="DonorDonationHistory.html">
-         Donation History
-        </a>
-        <a href="DonorProfile.html">
-         Welcome, Donor
-        </a>
-        <a href="index.html">
-         Logout
-        </a>
-       </nav>
-  </div>
-  <div class="about">
-   <h2>
-    About HelpBridge
-   </h2>
-   <p>
-    We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
-   </p>
-  </div>
-  <div class="donate-section">
-   <h2>
-    Donate Now
-   </h2>
-   <p>
-    Fill out the form below to list an item for donation.
-   </p>
-   <div class="donate-form">
-    <input placeholder="Item Name e.g., Winter Jacket" type="text">
-    <input placeholder="Quantity e.g., 5" type="text">
-    <select>
-     <option>
-      Food
-     </option>
-     <option>
-      Clothing
-     </option>
-     <option>
-      Books
-     </option>
-     <option>
-      Other
-     </option>
-    </select>
-    <button>
-     Submit Donation
-    </button>
-   </div>
-  </div>
- 
-
-</body></html>
+    
+    <div class="about">
+       <h2>About HelpBridge</h2>
+       <p>We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!</p>
+    </div>
+    
+    <div class="donate-section">
+       <h2>Donate Now</h2>
+       <p>Fill out the form below to list an item for donation.</p>
+       <div class="donate-form">
+          <input placeholder="Item Name e.g., Winter Jacket" type="text">
+          <input placeholder="Quantity e.g., 5" type="text">
+          <select>
+             <option>Food</option>
+             <option>Clothing</option>
+             <option>Books</option>
+             <option>Other</option>
+          </select>
+          <button>Submit Donation</button>
+       </div>
+    </div>
+</body>
+</html>

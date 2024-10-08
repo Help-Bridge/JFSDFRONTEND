@@ -1,8 +1,6 @@
 <html>
 <head>
-    <title>
-        HelpBridge - Submit Feedback
-    </title>
+    <title>HelpBridge - Submit Feedback</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <style>
         body {
@@ -12,8 +10,8 @@
             background-color: #f0f0f0;
         }
         .header {
-            background-color: #e0f7fa;
-            padding: 10px 20px;
+            background: linear-gradient(to right, #a8e0ff, #8ee3f5, #70cad1, #3e517a);
+            padding: 20px;
             display: flex;
             align-items: center;
         }
@@ -25,20 +23,18 @@
             font-size: 24px;
             margin: 0;
         }
-        .nav {
-            background-color: #00bcd4;
-            padding: 10px 20px;
+        .header nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
         }
-        .nav a {
-            color: #000;
+        .header nav a {
+            margin: 0 15px;
             text-decoration: none;
-            margin: 0 10px;
+            color: black;
             font-size: 18px;
         }
-        .nav a:hover {
+        .header nav a:hover {
             text-decoration: underline;
         }
         .content {
@@ -94,63 +90,36 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <img alt="HelpBridge Logo" src="hs.jpg"/>
+    <div>
         <h1>
-            HelpBridge
+         <img alt="HelpBridge Logo" src="logo.jpg">
+         HelpBridge
         </h1>
-    </div>
-    <div class="nav">
-        <div>
-            <a href="RecipientHome.html">
-                Dashboard
-               </a>
-            <a href="MyRequests.html">
-             My Requests
-            </a>
-            <a href="TrackDelivery.html">
-             Track Delivery
-            </a>
-            <a href="SubmitFeedback.html">
-             Submit Feedback
-            </a>
-           </div>
-           <div>
-            <a href="#">
-             Welcome, Recipient
-            </a>
-            <a href="index.html">
-             Logout
-            </a>
-        </div>
+     </div>
+    <div class="header">
+        
+        <nav>
+            <a href="RecipientHome.html">Dashboard</a>
+            <a href="MyRequests.html">My Requests</a>
+            <a href="TrackDelivery.html">Track Delivery</a>
+            <a href="SubmitFeedback.html">Submit Feedback</a>
+            <a href="RecipientProfile.html">Welcome, Recipient</a>
+            <a href="index.html">Logout</a>
+           </nav>
     </div>
     <div class="about">
-        <h2>
-            About HelpBridge
-        </h2>
-        <p>
-            We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!
-        </p>
+        <h2>About HelpBridge</h2>
+        <p>We are a young-blooded multifaceted organization filled with immense passion and a belief that everything is possible with the right amount of determination!</p>
     </div>
     <div class="content">
-        <h2>
-            Submit Feedback
-        </h2>
-        <p>
-            Provide feedback on the donations you received.
-        </p>
+        <h2>Submit Feedback</h2>
+        <p>Provide feedback on the donations you received.</p>
         <div class="feedback-form">
-            <label for="request-id">
-                Request ID
-            </label>
+            <label for="request-id">Request ID</label>
             <input id="request-id" placeholder="Enter Request ID" type="text"/>
-            <label for="feedback">
-                Your Feedback
-            </label>
+            <label for="feedback">Your Feedback</label>
             <textarea id="feedback" placeholder="Enter your feedback here" rows="4"></textarea>
-            <button type="submit">
-                Submit Feedback
-            </button>
+            <button type="submit">Submit Feedback</button>
         </div>
     </div>
 </body>
